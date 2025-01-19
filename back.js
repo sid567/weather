@@ -1,4 +1,4 @@
-// app.js
+
 
 const form = document.getElementById('weather-form');
 const weatherResult = document.getElementById('weather-result');
@@ -14,7 +14,7 @@ form.addEventListener('submit', async (event) => {
     const city = document.getElementById('city').value;
     const country = document.getElementById('country').value;
 
-    const apiKey = 'c46aa617791247a37dab8442c1d9d140'; // Replace with your Weatherstack API key
+    const apiKey = 'c46aa617791247a37dab8442c1d9d140'; 
     const url = `http://api.weatherstack.com/current?access_key=${apiKey}&query=${city},${country}`;
 
     try {
