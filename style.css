@@ -1,0 +1,106 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body and Background Styling */
+body {
+    background-image: url("weather.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Container for all elements */
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Main Heading */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Styling for the form */
+#weather-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Styling for input fields */
+input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #00ff7f;
+}
+
+/* Button Styling */
+button {
+    padding: 12px;
+    font-size: 1.2em;
+    color: white;
+    background: #00ff7f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00cc66;
+}
+
+/* Weather result section */
+#weather-result {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+/* Styling for the weather information text */
+#weather-result h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+#weather-result p {
+    font-size: 1.1em;
+    margin: 8px 0;
+}
+
+/* Show the weather result when visible */
+#weather-result.visible {
+    display: block;
+}
+
+/* Hidden class for hiding elements */
+.hidden {
+    display: none;
+}
